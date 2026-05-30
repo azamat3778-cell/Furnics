@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   max-width: 1200px;
@@ -25,7 +28,6 @@ body {
   font-weight: 300;
 }
 
-/* ── NAV ── */
 nav {
   display: flex;
   align-items: center;
@@ -77,7 +79,6 @@ nav {
   color: var(--mid);
 }
 
-/* ── HERO ── */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -147,7 +148,7 @@ nav {
   height: 100%;
   object-fit: cover;
 }
-/* placeholder image via gradient */
+
 .img-placeholder {
   width: 100%;
   height: 100%;
@@ -160,7 +161,6 @@ nav {
   letter-spacing: 2px;
 }
 
-/* ── FEATURES ── */
 .features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -204,7 +204,6 @@ nav {
   text-transform: uppercase;
 }
 
-/* ── ABOUT VIDEO ── */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -223,9 +222,8 @@ nav {
 .about-video-bg {
   width: 760px;
   height: 678px;
-  /* background: linear-gradient(135deg, #3d3026 0%, #261d15 100%); */
+
   position: absolute;
-  /* inset: 0; */
 }
 .play-btn {
   position: absolute;
@@ -292,7 +290,6 @@ nav {
   color: var(--white);
 }
 
-/* ── SECTION HEADER ── */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -314,7 +311,6 @@ nav {
   padding-bottom: 1px;
 }
 
-/* ── PRODUCTS GRID ── */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -363,7 +359,6 @@ nav {
   color: var(--mid);
 }
 
-/* ── TESTIMONIAL ── */
 .testimonial {
   padding: 40px 48px 60px;
   display: flex;
@@ -373,7 +368,7 @@ nav {
 .testimonial-arrow {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--light);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,7 +428,6 @@ nav {
   background: var(--dark);
 }
 
-/* ── ROOMS ── */
 .rooms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -465,7 +459,6 @@ nav {
   color: var(--mid);
 }
 
-/* ── SUBSCRIBE ── */
 .subscribe {
   padding: 60px 48px;
   text-align: center;
@@ -509,7 +502,6 @@ nav {
   background: #333;
 }
 
-/* ── BRANDS ── */
 .brands {
   border-top: 1px solid #e2ddd6;
   border-bottom: 1px solid #e2ddd6;
@@ -527,7 +519,6 @@ nav {
   font-weight: 400;
 }
 
-/* ── ARTICLES ── */
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -575,7 +566,6 @@ nav {
   padding-bottom: 1px;
 }
 
-/* ── FOOTER ── */
 footer {
   background: var(--cream);
   border-top: 1px solid #e2ddd6;
@@ -643,7 +633,6 @@ footer {
   color: var(--light);
 }
 
-/* Photo placeholders with colors */
 .ph-warm1 {
   background: linear-gradient(145deg, #d4c5b0, #b8a898);
 }
@@ -666,8 +655,7 @@ footer {
   background: linear-gradient(145deg, #5a4a38, #3a2e20);
 }
 
-/* Animate on load */
-@keyframes fadeUp {
+/* @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -682,4 +670,4 @@ footer {
 }
 .hero-img {
   animation: fadeUp 0.8s 0.15s ease both;
-}
+} */
