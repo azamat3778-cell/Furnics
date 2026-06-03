@@ -142,11 +142,17 @@ nav {
 .hero-img {
   aspect-ratio: 4/3;
   overflow: hidden;
+  transition: 1.1s;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }
 .hero-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.hero-img:hover {
+  transform: scale(1.04);
 }
 
 .img-placeholder {
@@ -222,9 +228,14 @@ nav {
 .about-video-bg {
   width: 760px;
   height: 678px;
-
   position: absolute;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }
+.about-video-bg:hover {
+  transform: scale(1.04);
+}
+
 .play-btn {
   position: absolute;
   top: 50%;
